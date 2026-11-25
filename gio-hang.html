@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Thuần Tự Nhiên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="dau">
+            <a class="logo" href="index.php">THUẦN TỰ NHIÊN</a>
+            <form class="tim" action="san-phamphp">
+                <input name="tim" placeholder="Tìm tên nông sản...">
+                <button type="submit">Tìm</button>
+                <a class="nut" href="gio-hang.html" id="gio-hang">Giỏ hàng (<span id="so-luong-gio">0</span>)</a>
+            </form>
+        </div>
+        <nav>
+            <a href="index.php" class="">Trang chủ</a>
+            <a href="gioi-thieu.html" class="">Giới thiệu</a>
+            <a href="san-phamphp" class="">Sản phẩm</a>
+            <a href="lien-he.html" class="">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Giỏ hàng của bạn</h1>
+        <div class="hang">
+            <div style="flex:2; overflow-x:auto">
+                <table class="bang">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm / đơn vị</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody id="danh-sach-gio"></tbody> 
+                </table>
+                <div class="nhom-nut"><a class="nut nut-phu" href="san-phamphp">Tiếp tục mua hàng</a></div>
+            </div>
+            <aside class="khung">
+                <h2>Tóm tắt giỏ hàng</h2>
+                <div class="dong"><span>Tạm tính</span><b id="tam-tinh">0đ</b></div>
+                <div class="dong"><span>Phí giao hàng</span><b id="phi-giao">0đ</b></div>
+                <div class="dong"><b>Dự kiến thanh toán</b><b id="tong-tien">0đ</b></div><a class="nut"
+                    style="margin-top:20px" href="dat-hang.html">Đặt hàng</a>
+            </aside>
+        </div>
+    </main>
+
+  
+</body>
+<footer>
+    <div class="footer-thong-tin">
+        <h2>THUẦN TỰ NHIÊN</h2>
+        <p>Thông tin cửa hàng đã được xác nhận</p>
+    </div>
+
+    <div class="footer-menu">
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="chinh-sach.html">Chính Sách</a>
+        <a href="lien-he.html">Liên Hệ</a>
+        <span>Mạng xã hội</span>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</html>

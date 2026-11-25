@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng - Thuần Tự Nhiên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="dau"><a class="logo" href="index.php">THUẦN TỰ NHIÊN</a>
+            <form class="tim" action="san-phamphp"><input name="tim" placeholder="Tìm tên nông sản..."><button
+                    type="submit">Tìm</button><a class="nut" href="gio-hang.html">Giỏ Hàng (3)</a></form>
+        </div>
+        <nav><a href="index.php" class="">Trang chủ</a><a href="gioi-thieu.html" class="">Giới thiệu</a><a
+                href="san-phamphp" class="">Sản phẩm</a><a href="lien-he.html" class="">Liên hệ</a></nav>
+    </header>
+    <main>
+        <h1>Đặt hàng</h1>
+        <div class="hang">
+            <div style="flex:1.3">
+                <h2>Thông tin giao hàng</h2>
+                <form action="ket-qua-dat-hang.html">
+                    <div class="nhap"><label>Họ tên người nhận *</label><input name="ten" placeholder="Nhập họ tên"
+                            required></div>
+                    <div class="hang">
+                        <div class="nhap"><label>Số điện thoại *</label><input type="tel" name="sdt"
+                                placeholder="10 chữ số" required pattern="[0-9]{10}"></div>
+                        <div class="nhap"><label>Email</label><input type="email" name="email"
+                                placeholder="Không bắt buộc"></div>
+                    </div>
+                    <div class="nhap"><label>Địa chỉ giao hàng đầy đủ *</label><textarea name="diachi" rows="4"
+                            placeholder="Số nhà, đường, khu vực, tỉnh/thành" required></textarea></div>
+                    <h2>Phương thức thanh toán</h2>
+                    <div class="khung"><label><input type="radio" checked name="thanhtoan"> Thanh toán khi nhận hàng
+                            (COD)</label></div>
+                    <div class="nhom-nut"><a class="nut nut-phu" href="gio-hang.html">Quay lại giỏ hàng</a></div>
+                    <p class="chu-thich">Đây là biểu mẫu giao diện; không gửi đơn lên máy chủ.</p><button
+                        type="submit">Xác nhận đặt hàng</button>
+                </form>
+            </div>
+            <aside class="khung">
+                <h2>Đơn hàng của bạn</h2>
+                <p>Cà rốt Đà Lạt • Túi 500g<br>30.000đ × 2 = 60.000đ</p>
+                <p>Gạo Thơm • Túi 2kg<br>120.000đ × 1 = 120.000đ</p>
+                <div class="dong"><span>Tạm tính</span><b>180.000đ</b></div>
+                <div class="dong"><span>Phí giao hàng</span><b>25.000đ</b></div>
+                <div class="dong"><strong>Tổng thanh toán</strong><strong>205.000đ</strong></div>
+                <p>Vui lòng kiểm tra thông tin và chỉnh sửa giỏ hàng trước khi xác nhận.</p>
+            </aside>
+        </div>
+    </main>
+ 
+</body>
+<footer>
+    <div class="footer-thong-tin">
+        <h2>THUẦN TỰ NHIÊN</h2>
+        <p>Thông tin cửa hàng đã được xác nhận</p>
+    </div>
+
+    <div class="footer-menu">
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="chinh-sach.html">Chính Sách</a>
+        <a href="lien-he.html">Liên Hệ</a>
+        <span>Mạng xã hội</span>
+    </div>
+</footer>
+</html>
